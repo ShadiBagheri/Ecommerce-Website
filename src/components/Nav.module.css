@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.free{
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #000;
+}
+.free .icon{
+    display: flex;
+    color: #e5980d;
+    font-size: 22px;
+}
+.free p{
+    display: flex;
+    color: #fbfbfb;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 35px;
+    margin-top: -20px;
+}
+.mainHeader{
+    width: 100%;
+    padding: 30px 40px;
+    border-bottom: 2px solid #000000;
+}
+.mainHeader .container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -120px;
+}
+.mainHeader .container .searchBox{
+    margin-right: 30px;
+}
+.mainHeader .container .searchBox input{
+    width: 300px;
+    outline: none;
+    padding: 10px 30px;
+    border: 3px solid #3a5bf4;
+    color: #747474;
+}
+.mainHeader .container .searchBox button{
+    outline: none;
+    padding: 10px 20px;
+    border: 3px solid #3a5bf4;
+    background-color: #3a5bf4;
+    cursor: pointer;
+}
+.mainHeader .container .icon{
+    display: flex;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.mainHeader .container .icon .account{
+    display: flex;
+    margin-right: 30px;
+}
+.mainHeader .container .icon .account .userIcon{
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+    color: black;
+}
+.mainHeader .container .icon .account p{
+    margin-right: 5px;
+    margin-top: 2px;
+}
+.mainHeader .container .icon .secondIcons{
+    display: flex;
+}
+.mainHeader .container .icon .secondIcons .link{
+    font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: #3a5bf4;
+}
+.logo img{
+    margin-top: -120px;
+    margin-left: -160px;
+    width: 400px;
+    height: 270px;
+}
+.header{
+    width: 100%;
+    padding: 20px 30px;
+    box-shadow: rgb(0, 0, 0, 0.35) 0 5px 15px;
+}
+.header .container{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+.header .container nav ul{
+    display: flex;
+    list-style: none;
+}
+.header .container nav ul li{
+    margin-left: 20px;
+}
+.header .container nav ul li .link{
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.header .container nav ul li .link:hover{
+    color: #3a5bf4;
+}
+.header .container .auth{
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.header .container .auth button{
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+}
