@@ -1,0 +1,41 @@
+.banner{
+    width: 100%;
+    padding: 20px 30px;
+}
+.banner .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    border-radius: 5px;
+    background: #3a5bf4;
+}
+.banner .container .detail{
+    margin-top: 10%;
+    margin-left: 20px;
+}
+.banner .container .detail h4{
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #ecf2f7;
+ }
+.banner .container .detail h3{
+    margin-top: 10px;
+    margin-right: 10%;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.banner .container .detail p{
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.banner .container .imgBox{
+    margin-top: 20px;
+}
+.banner .container .imgBox img{
+    width: 350px;
+    height: 400px;
+}

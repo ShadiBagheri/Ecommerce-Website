@@ -34,12 +34,17 @@ const Nav = () => {
                         <button>Search</button>
                     </div>
                     <div className={styles.icon}>
-                        <div className={styles.account}>
-                            <div className={styles.userIcon}>
-                                <AiOutlineUser/>
-                            </div>
-                            <p>Hello User</p>
-                        </div>
+                        {
+                            isAuthenticated &&
+                            (
+                                <div className={styles.account}>
+                                    <div className={styles.userIcon}>
+                                        <AiOutlineUser/>
+                                    </div>
+                                    <p>Hello {user.name}</p>
+                                </div>
+                            )
+                        }
                         <div className={styles.secondIcons}>
                             <Link to="/" className={styles.link}><AiOutlineHeart/></Link>
                             <Link to="/cart" className={styles.link}><BsBagCheck/></Link>

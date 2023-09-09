@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.topBanner{
+    width: 100%;
+    height: 600px;
+    padding: 30px 50px;
+    background-color: #b6c2f6;
+}
+.topBanner .container{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+}
+.topBanner .container .detail{
+    margin-top: 12%;
+}
+.topBanner .container .detail h2{
+    font-size: 52px;
+    color: #000;
+    margin-left: 15%;
+    margin-bottom: 50px;
+}
+.topBanner .container .detail .link{
+    padding: 10px 20px;
+    margin-left: 15%;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #000;
+    background-color: #ffff;
+    transition: 0.5s;
+}
+.topBanner .container .detail .link:hover{
+    background-color: #3a5bf4;
+}
+.topBanner .container .detail .link .arrow{
+    margin-bottom: -5px;
+    margin-left: 5px;
+}
+.topBanner .container .imgBox img{
+    margin-top: 70px;
+    width: 650px;
+    height: 400px;
+}
+.productType{
+    width: 100%;
+    padding: 20px 30px;
+}
+.productType .container{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+}
+.productType .container .box{
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+.productType .container .box .imgBox{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #b6c2f6;
+    cursor: pointer;
+}
+.productType .container .box .imgBox img{
+    width: 280px;
+    height: 200px;
+    margin-left: -42px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.productType .container .box .imgBox .phone{
+     width: 240px;
+     height: 136px;
+     margin-top: 30px;
+     margin-left: -15px;
+ }
+.productType .container .box .imgBox:hover img{
+    transform: scale(1.2);
+}
+.productType .container .box .detail{
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.productType .container .box .detail p{
+    margin-top: 20px;
+    color: #9a9a9a;
+}
+.about{
+    width: 100%;
+    padding: 40px 50px;
+}
+.about .container{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+}
+.about .container .box{
+    display: flex;
+    width: 270px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ecf2f7;
+}
+.about .container .box .icon{
+    font-size: 32px;
+    margin-top: 10px;
+    color: #e44c8c;
+}
+.about .container .box .detail{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.about .container .box .detail h3{
+    color: #000;
+}
+.about .container .box .detail p{
+    color: #9a9a9a;
+}
+.product{
+    width: 100%;
+    padding: 30px 40px;
+}
+.product h2{
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #000;
+}
+.product .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product .container .box{
+    width: 300px;
+    height: 380px;
+    padding: 10px 20px;
+    overflow: hidden;
+    border: 1px solid #9e9d9d;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.product .container .box:hover{
+    box-shadow: rgba(0,0,0,0.35) 0 5px 15px;
+}
+.product .container .box .imgBox{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #9e9d9d;
+}
+.product .container .box .imgBox .icon{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    right: -70px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.product .container .box .imgBox:hover .icon{
+     transform: translateX(-80px);
+ }
+.product .container .box .imgBox .icon li{
+    list-style: none;
+    padding: 10px 10px;
+    font-size: 18px;
+    background: #fff;
+    color: #000;
+    box-shadow: rgba(0,0,0,0.35) 0 5px 15px;
+    transition: 0.5s;
+}
+.product .container .box .imgBox .icon li:hover{
+    background: #3a5bf4;
+    color: #fff;
+}
+.product .container .box .imgBox .image{
+   align-items: center;
+    margin-left: 20px;
+}
+.product .container .box .imgBox .image img{
+    width: 220px;
+    height: 200px;
+}
+.product .container .box .detail{
+    margin-top: 10px;
+}
+.product .container .box .detail p{
+    color: #9a9a9a;
+    font-size: 16px;
+}
+.product .container .box .detail h3{
+    margin-top: 10px;
+    color: #000;
+    font-size: 16px;
+    transition: 0.5s;
+}
+.product .container .box:hover .detail h3{
+    color: #3a5bf4;
+}
+.product .container .box .detail h4{
+    margin-top: 5px;
+    color: #3a5bf4;
+    font-size: 14px;
+ }
+
