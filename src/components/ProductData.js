@@ -1,4 +1,4 @@
-export const HomeData = [
+export const ProductData = [
     {
         id: 1,
         Title: "Apple 2022 11‑inch iPad Pro (Wi-Fi, 256 GB) - spacegrijs (4e generatie)",
@@ -55,7 +55,32 @@ export const HomeData = [
         Price: "543",
         img: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-max-hero-select-202011_FMT_WHH?wid=607&hei=556&fmt=jpeg&qlt=90&.v=1633623988000"
     },
+    {
+        id: 9,
+        Title: "Apple Watch SE 40mm",
+        Cat: "Apple Watch SE",
+        Price: "443",
+        img: "https://www.costco.co.uk/medias/sys_master/images/h53/h06/135732255391774.jpg"
+    },
+    {
+        id: 10,
+        Title: "Apple Watch SE GPS 40mm",
+        Cat: "Apple Watch SE 40mm",
+        Price: "543",
+        img: "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MPH13ref_VW_34FR+watch-44-alum-starlight-nc-se_VW_34FR_WF_CO+watch-face-44-nike-se-summitwhite_VW_34FR_WF_CO?wid=752&hei=720&bgc=fafafa&trim=1&fmt=p-jpg&qlt=80&.v=YlVIN3I2cHdJNmRZcFkrWWhWYkxsYnIyYzcrQVJuc1BySXA4VHB3aEs2Qitnb1FmV0dwWWpuaklTNnhCTVhYWGo4dW9VSUZ4RWw0RVZLZFRVemZtZVNNSkRnT3V5bEt6cDRDa3NhcmZxWUZFNmEzQmlQNFQ2T2syVEpieXdGdVl6enJIUlpLUFBXZkNVckorSGZXMzBCcnowOGUwOFg4VWVNRXJPTkZzcHZQTlY1VVpZdTJWU1VmK0FXKzlpeFZuTUFmS01ENEh4NEQwRjBrU05JY28wRll2SVZPaWN1OGNORDN1bmxVRGFuWithakZ1L1d4WC9tL0hOc1g4SFhobg"
+    },
+    {
+        id: 11,
+        Title: "Refurbished iPhone 13 Pro 128GB - Sierra Blue (SIM-Free)",
+        Cat: "IPhone 13 Pro",
+        Price: "643",
+        img: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-iphone-13-pro-blue-2023?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1679072987994"
+    },
+    {
+        id: 12,
+        Title: "Apple AirPods (3rd generation) with Lightning Charging Case, MPNY3ZM/A",
+        Cat: "AirPods 3",
+        Price: "343",
+        img: "https://www.costco.co.uk/medias/sys_master/images/hed/hbc/120489058304030.jpg"
+    },
 ]
-
-
-

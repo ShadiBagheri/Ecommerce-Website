@@ -10,7 +10,7 @@
     background: #3a5bf4;
 }
 .banner .container .detail{
-    margin-top: 10%;
+    margin-top: 6%;
     margin-left: 20px;
 }
 .banner .container .detail h4{
@@ -26,14 +26,31 @@
     color: #fff;
 }
 .banner .container .detail p{
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     font-size: 32px;
     font-weight: 600;
     letter-spacing: 1px;
     color: #fff;
 }
+.banner .container .detail .link{
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #ecf2f7;
+    background: #000;
+    transition: 0.5s;
+}
+.banner .container .detail .link:hover{
+    color: #000;
+    background: #ecf2f7;
+}
+.banner .container .detail .link .arrow{
+    margin-bottom: -5px;
+    margin-left: 5px;
+}
 .banner .container .imgBox{
-    margin-top: 20px;
+    margin-top: -30px;
 }
 .banner .container .imgBox img{
     width: 350px;

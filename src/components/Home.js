@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 //Components
 //Icons
-import { BsArrowRight } from "react-icons/bs";
+import Banner from "./Banner";
 //Image
 import MacBook2 from "../Image/MacBook2.png";
 import phone from "../Image/phone.png";
@@ -14,17 +14,48 @@ import { FiTruck } from "react-icons/fi";
 import { BsCurrencyDollar } from "react-icons/bs";
 import { CiPercent } from "react-icons/ci";
 import { BiHeadphone } from "react-icons/bi";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import {AiOutlineCloseCircle, AiOutlineShoppingCart} from "react-icons/ai";
 import { BsEye } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
+import { BsArrowRight } from "react-icons/bs";
 //Style
 import styles from "../components/Home.module.css";
-import Banner from "./Banner";
 
 
-const Home = ({HomeData}) => {
+const Home = ({HomeData, detail, view, close, setClose, addToCart}) => {
     return (
      <>
+         {
+             close ?
+                 <div className={styles.productDetails}>
+                     <div className={styles.container}>
+                         <button className={styles.closeBtn} onClick={() => setClose(false)}>
+                             <AiOutlineCloseCircle/>
+                         </button>
+                         {
+                             detail.map(item => {
+                                 return (
+                                     <div className={styles.productBox}>
+                                         <div className={styles.imgBox}>
+                                             <img className={styles.image} src={item.img} alt={item.Title}/>
+                                         </div>
+                                         <div className={styles.detail}>
+                                             <h4>{item.Cat}</h4>
+                                             <h2>{item.Title}</h2>
+                                             <p>
+                                                 A Screen Everyone Will love: Whether Your Family Is ST
+                                             </p>
+                                             <h3>{item.Price}</h3>
+                                             <button className={styles.btn}>Add To Cart</button>
+                                         </div>
+                                     </div>
+                                 )
+                             })
+                         }
+                     </div>
+                 </div> :
+                 null
+         }
         <div className={styles.topBanner}>
             <div className={styles.container}>
                 <div className={styles.detail}>
@@ -119,17 +150,17 @@ const Home = ({HomeData}) => {
              <h2>Top Products</h2>
              <div className={styles.container}>
                  {
-                     HomeData.map(item => (
+                     HomeData.map((item) => (
                      <div className={styles.box} key={item.id}>
                           <div className={styles.imgBox}>
                               <div className={styles.image}>
                                   <img src={item.img} alt={item.Title}/>
                               </div>
                                <div className={styles.icon}>
-                                   <li>
+                                   <li onClick={() => addToCart (item)}>
                                        <AiOutlineShoppingCart/>
                                    </li>
-                                   <li>
+                                   <li onClick={() => view (item)}>
                                        <BsEye/>
                                    </li>
                                    <li>
@@ -140,7 +171,7 @@ const Home = ({HomeData}) => {
                          <div className={styles.detail}>
                              <p>{item.Cat}</p>
                              <h3>{item.Title}</h3>
-                             <h4>{item.Price}</h4>
+                             <h4>${item.Price}</h4>
                          </div>
                      </div>
                      ))

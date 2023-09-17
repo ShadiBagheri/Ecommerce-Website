@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 //Icons
@@ -12,9 +12,14 @@ import logo from "../Image/logo.png";
 import styles from "../components/Nav.module.css";
 
 
-const Nav = () => {
+const Nav = ({searchBtn}) => {
 
+    const [search, setSearch] = useState();
     const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
+
+    const searchHandler = (event) => {
+        setSearch(event.target.value)
+    }
 
     return (
         <>
@@ -30,8 +35,8 @@ const Nav = () => {
                         <img src={logo} alt="logo"/>
                     </div>
                     <div className={styles.searchBox}>
-                        <input type="text" placeholder="Search Your Product"/>
-                        <button>Search</button>
+                        <input type="text" placeholder="Search Your Product" value={search} onChange={searchHandler}/>
+                        <button onClick={() => searchBtn(search)}>Search</button>
                     </div>
                     <div className={styles.icon}>
                         {

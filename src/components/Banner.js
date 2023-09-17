@@ -17,8 +17,11 @@ const Banner = () => {
                         <h4>LATEST  TECHNOLOGY  ADDED</h4>
                         <h3>Apple Ipad 10.2 9th Gen - 2021</h3>
                         <p>$ 989</p>
-                        <Link to="/product">Shop Now</Link>
-                        <BsArrowRight/>
+                        <Link to="/product" className={styles.link}>
+                            Shop Now
+                            <BsArrowRight className={styles.arrow}/>
+                        </Link>
+
                     </div>
                     <div className={styles.imgBox}>
                         <img src={ipad2} alt="ipad2"/>
